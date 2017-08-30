@@ -22,36 +22,23 @@ SellerInfo
 
 Target Customer
 -Individual Seller (SellerInfo)
-
 
-|Use Case ID	        |1                                                                                   |
-|---------------------|------------------------------------------------------------------------------------|
-|Use Case Name	      |Register for One-Stock                                                              |
-|Primary Actor	      |User                                                                                |
-|Secondary Actor	    |None                                                                                |
-|Description	        |Allow the user to register an account with One-Stock.                               |
+Use Case ID | 1
+:---------- | :-
+Use Case Name | Registration for One-Stock
+Primary Actor | User
+Secondary Actor | None
+Description | Allow the user to register an account with One-Stock 
+Precondition | User has successfully connected to our website <br/> User should not have an existing account
+PostCondition | Account sucessfully created <br/> Able to login using the newly created account 
+Normal Flow | 1. User inputs required fields in the Registration Page <br/> 2. User input the captcha information <br/> 3. System validate all the input <br/> 4. Successfully created an account with inactive status <br/> 5. System send a link via the input email <br/> 6. User click on the link and redirect to our login page<br/> 7. User enter ID and Password <br/> 8. Successful Login <br/> 9. System change the status to active <br/> 10. The system display the relevant home page
+Alternative Flow | Hi
 
-Precondition	User has successfully connected to our website.
-User should not have an existing account
-Postcondition	Account successfully created 
-Able to login using the newly created account
-Normal flow	User inputs required fields in the Registration Page
-User input the captcha information
-System validate all the input
-Successfully created an account with inactive status
-System send a link via the input email 
-User click on the link and redirect to our login page
-User enter ID and Password
-Successful Login
-System change the status to active
-The system display the relevant home page 
-Alternative flow	3a invalid Input
-    1.The system prompts for re-enter
-    2.Use case resumes at main flow step 1
-7a Invalid username and password 
-    1.The system display “Invalid username and password” message
-    2.The system prompts for username and password
-    3.Use case resumes at main flow step 7
+
+
+
+
+
 
 First Name 
 Last Name
